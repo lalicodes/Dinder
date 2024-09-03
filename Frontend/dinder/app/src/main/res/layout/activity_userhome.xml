@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/centerImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/centerRestaurantImage"
+            android:layout_width="409dp"
+            android:layout_height="500dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="96dp"
+            android:background="#000000"
+            android:contentDescription="@string/imageDescription"
+            android:padding="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/restLogo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#434343"
+            android:contentDescription="@string/logoDesc"
+            app:layout_constraintBottom_toTopOf="@+id/centerRestaurantImage"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/restName"
+            android:layout_width="312dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="12dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:flow_verticalAlign="center"
+            app:layout_constraintBottom_toTopOf="@+id/centerRestaurantImage"
+            app:layout_constraintStart_toEndOf="@+id/restLogo" />
+
+        <ImageButton
+            android:id="@+id/adminBtn"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/rounded_icon_button"
+            android:contentDescription="@string/settings_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/settings" />
+
+        <ImageButton
+            android:id="@+id/dislikeBtn"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/rounded_icon_button"
+            android:contentDescription="@string/dislike"
+            app:layout_constraintBottom_toBottomOf="@+id/centerRestaurantImage"
+            app:layout_constraintStart_toStartOf="@+id/centerRestaurantImage"
+            app:srcCompat="@drawable/thumb_down" />
+
+        <ImageButton
+            android:id="@+id/heartBtn"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/rounded_icon_button"
+            android:contentDescription="@string/heart"
+            app:layout_constraintBottom_toBottomOf="@+id/centerRestaurantImage"
+            app:layout_constraintEnd_toEndOf="@+id/centerRestaurantImage"
+            app:srcCompat="@drawable/favorite" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chipContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/centerRestaurantImage"
+            tools:listitem="@layout/category_chip_item" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="150dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:textSize="18sp"
+            app:flow_verticalAlign="center"
+            app:layout_constraintStart_toEndOf="@+id/locationIcon"
+            app:layout_constraintTop_toTopOf="@+id/locationIcon" />
+
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:contentDescription="@string/location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/centerRestaurantImage"
+            app:srcCompat="@drawable/location_on" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="2dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4.5"
+            android:stepSize="0.5"
+            app:layout_constraintEnd_toEndOf="@+id/centerRestaurantImage"
+            app:layout_constraintTop_toBottomOf="@+id/centerRestaurantImage" />
+
+        <include
+            android:id="@+id/match_notif_layout"
+            layout="@layout/match_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_navigator"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="370dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ratingCount"
+            android:layout_width="45dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="3dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:flow_verticalAlign="top"
+            app:layout_constraintEnd_toEndOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemBackground="@color/maroon"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_nav" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

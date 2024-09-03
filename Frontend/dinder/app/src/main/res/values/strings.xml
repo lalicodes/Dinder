@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Dinder</string>
+    <string name="dinder">Dinder</string>
+    <string name="to_counter">To Counter</string>
+    <string name="increase">Increase</string>
+    <string name="decrease">Decrease</string>
+    <string name="sendGet">Send Get Request</string>
+    <string name="back_to_main">Back to Main</string>
+    <string name="back">Back</string>
+
+    <string name="login">Login</string>
+    <string name="signUp">Sign-Up</string>
+    <string name="name">Name</string>
+    <string name="nameExample">John</string>
+    <string name="username">Username</string>
+    <string name="usernameExample">john123</string>
+    <string name="password">Password</string>
+    <string name="passwordExample">johnsPa55w0rd!</string>
+    <string name="confirmPassword">Confirm Password</string>
+
+    <string name="termsOfServiceAgreement">I agree to Dinder\'s Terms of Service</string>
+    <string name="dataConsent">I consent to Dinder using my data</string>
+
+    <string name="imageDescription">Image for Restaurant</string>
+    <string name="logoDesc">Logo of Restaurant</string>
+    <string name="friendsList">List of Friends</string>
+
+    <string name="dislike">Dislike</string>
+    <string name="userProfile">User Profile</string>
+    <string name="heart">Heart/Favorite</string>
+    <string name="location">Location/Address</string>
+
+    <string name="tags">Tag Data for Restaurant</string>
+
+    <string name="dietRest">Dietary Restrictions</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="vegan">Vegan</string>
+    <string name="halal">Halal</string>
+    <string name="profileIcon">User Icon</string>
+    <string name="save">Save</string>
+    <string name="invite">Invite</string>
+
+    <string name="logo_content_description">Logo For App</string>
+    <string name="matches">Matches</string>
+    <string name="match1" />
+    <string name="match2" />
+    <string name="match3" />
+    <string name="match4" />
+    <string name="match5" />
+    <string name="match6" />
+    <string name="match7" />
+    <string name="match8" />
+    <string name="match9" />
+    <string name="match10" />
+    <string name="home">home</string>
+    <string name="match">match</string>
+    <string name="social">social</string>
+    <string name="incorrect_login">Username/password were incorrect</string>
+    <string name="recent_likes">Recent Likes</string>
+    <string name="match_notification">You have a new match!</string>
+    <string name="_1234">1234</string>
+    <string name="uh_oh">UH OH</string>
+    <string name="unfortunately_the_page_you_are_to_reach_is_not_available_at_this_moment_please_try_again_later">Unfortunately the page you are to reach is not available at this moment. Please try again later.</string>
+    <string name="phone_icon">Phone Icon</string>
+    <string name="reviews">Reviews</string>
+    <string name="user_review_image">User Review Image</string>
+    <string name="send_friend_request">Send Friend Request</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="friend_requests">Friend Requests</string>
+    <string name="friends">Friends</string>
+    <string name="out_of_likes">You\'ve run out of likes</string>
+    <string name="group_requests">Group Requests</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="log_out">Log Out</string>
+    <string name="remove_friend">Remove Friend</string>
+    <string name="settings_icon">Settings Icon</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+</resources>
